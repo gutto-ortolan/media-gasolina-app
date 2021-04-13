@@ -1,0 +1,77 @@
+import { StyleSheet } from "react-native";
+
+export default StyleSheet.create({
+  background: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "white",
+  },
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    width: "90%",
+    paddingBottom: 50,
+  },
+  buttonContainer: {
+    marginTop: 10,
+    width: "100%",
+    height: 40,
+    backgroundColor: "#ffb745",
+    padding: 10,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 3,
+  },
+  buttonText: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "#ffffff",
+  },
+  inputContainer: {
+    marginTop: 5,
+    marginBottom: 10,
+    width: "100%",
+    height: 50,
+    borderColor: "#ffb745",
+    borderRadius: 3,
+    borderWidth: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#fff",
+  },
+  iconStyle: {
+    padding: 10,
+    height: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRightColor: "#ccc",
+    borderRightWidth: 1,
+    width: 50,
+  },
+  input: {
+    padding: 10,
+    flex: 1,
+    fontSize: 16,
+    color: "#222",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  icon: {
+    width: "15%",
+    height: 50,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  erros: {
+    color: "red",
+    marginTop: -5,
+    marginBottom: 5,
+  },
+  titulo: {
+    fontWeight: "bold",
+    fontSize: 18,
+    marginBottom: 10,
+  },
+});
