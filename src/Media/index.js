@@ -33,8 +33,10 @@ const Media = ({ route }) => {
     <SafeAreaView style={Estilos.background}>
       <View style={Estilos.containerMedia}>
         <View style={{ borderWidth: 1, padding: 5 }}>
-          <Text style={{ fontSize: 25 }}>Km percorridos: {kmPercorrido}</Text>
-          <Text style={{ fontSize: 25 }}>
+          <Text style={Estilos.tamanhoLetra}>
+            Km percorridos: {kmPercorrido}
+          </Text>
+          <Text style={Estilos.tamanhoLetra}>
             Litros consumidos: {litrosConsumidos}
           </Text>
         </View>
@@ -50,141 +52,24 @@ const Media = ({ route }) => {
         </Text>
         <View style={{ borderWidth: 1, padding: 3 }}>
           <View style={{ flexDirection: "row" }}>
-            <Text
-              style={{
-                padding: 2,
-                height: 25,
-                marginBottom: 3,
-                width: 200,
-                backgroundColor: "#02933D",
-              }}
-            >
-              Mais de 12 Km/l
-            </Text>
-            <Text
-              style={{
-                height: 25,
-                marginBottom: 3,
-                width: 20,
-                backgroundColor: "#02933D",
-                justifyContent: "center",
-                alignItems: "center",
-                marginLeft: 3,
-                paddingLeft: 5,
-              }}
-            >
-              A
-            </Text>
+            <Text style={Estilos.kmA}>Mais de 12 Km/l</Text>
+            <Text style={Estilos.consumoA}>A</Text>
           </View>
           <View style={{ flexDirection: "row" }}>
-            <Text
-              style={{
-                padding: 2,
-                height: 25,
-                marginBottom: 3,
-                width: 200,
-                backgroundColor: "#C7D401",
-              }}
-            >
-              Até 12 Km/l
-            </Text>
-            <Text
-              style={{
-                height: 25,
-                marginBottom: 3,
-                width: 20,
-                backgroundColor: "#C7D401",
-                justifyContent: "center",
-                alignItems: "center",
-                marginLeft: 3,
-                paddingLeft: 5,
-              }}
-            >
-              B
-            </Text>
+            <Text style={Estilos.kmB}>Até 12 Km/l</Text>
+            <Text style={Estilos.consumoB}>B</Text>
           </View>
-          <View
-            style={{
-              flexDirection: "row",
-            }}
-          >
-            <Text
-              style={{
-                padding: 2,
-                height: 25,
-                marginBottom: 3,
-                width: 200,
-                backgroundColor: "#FFEF02",
-              }}
-            >
-              Até 10 Km/l
-            </Text>
-            <Text
-              style={{
-                height: 25,
-                marginBottom: 3,
-                width: 20,
-                backgroundColor: "#FFEF02",
-                justifyContent: "center",
-                alignItems: "center",
-                marginLeft: 3,
-                paddingLeft: 5,
-              }}
-            >
-              C
-            </Text>
+          <View style={Estilos.viewLinha}>
+            <Text style={Estilos.kmC}>Até 10 Km/l</Text>
+            <Text style={Estilos.consumoC}>C</Text>
           </View>
           <View style={{ flexDirection: "row" }}>
-            <Text
-              style={{
-                padding: 2,
-                height: 25,
-                marginBottom: 3,
-                width: 200,
-                backgroundColor: "#F9BD02",
-              }}
-            >
-              Até 8 Km/l
-            </Text>
-            <Text
-              style={{
-                height: 25,
-                marginBottom: 3,
-                width: 20,
-                backgroundColor: "#F9BD02",
-                justifyContent: "center",
-                alignItems: "center",
-                marginLeft: 3,
-                paddingLeft: 5,
-              }}
-            >
-              D
-            </Text>
+            <Text style={Estilos.kmD}>Até 8 Km/l</Text>
+            <Text style={Estilos.consumoD}>D</Text>
           </View>
           <View style={{ flexDirection: "row" }}>
-            <Text
-              style={{
-                padding: 2,
-                height: 25,
-                width: 200,
-                backgroundColor: "#E97601",
-              }}
-            >
-              Até 4 Km/l
-            </Text>
-            <Text
-              style={{
-                height: 25,
-                width: 20,
-                backgroundColor: "#E97601",
-                justifyContent: "center",
-                alignItems: "center",
-                marginLeft: 3,
-                paddingLeft: 5,
-              }}
-            >
-              E
-            </Text>
+            <Text style={Estilos.kmE}>Até 4 Km/l</Text>
+            <Text style={Estilos.consumoE}>E</Text>
           </View>
         </View>
       </View>
